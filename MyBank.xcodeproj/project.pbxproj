@@ -16,6 +16,15 @@
 		13158C0027C0013900A0F747 /* MyBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13158BFF27C0013900A0F747 /* MyBankTests.swift */; };
 		13158C0A27C0013900A0F747 /* MyBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13158C0927C0013900A0F747 /* MyBankUITests.swift */; };
 		13158C0C27C0013900A0F747 /* MyBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13158C0B27C0013900A0F747 /* MyBankUITestsLaunchTests.swift */; };
+		13158C1C27C0090700A0F747 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13158C1B27C0090700A0F747 /* APIService.swift */; };
+		13158C1E27C0091700A0F747 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13158C1D27C0091700A0F747 /* Account.swift */; };
+		13158C2227C009AB00A0F747 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13158C2127C009AB00A0F747 /* AccountViewModel.swift */; };
+		136C9A8F27C12110004F1132 /* AccountTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136C9A8E27C12110004F1132 /* AccountTableViewDataSource.swift */; };
+		136C9A9227C12D48004F1132 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136C9A9127C12D48004F1132 /* AccountTableViewCell.swift */; };
+		1389470D27C3F5620078DF7A /* DetailAccountTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389470C27C3F5620078DF7A /* DetailAccountTableViewDataSource.swift */; };
+		1389470F27C3FA150078DF7A /* DetailAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389470E27C3FA150078DF7A /* DetailAccountTableViewCell.swift */; };
+		1389471227C405DB0078DF7A /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389471127C405DB0078DF7A /* UILabel+Extension.swift */; };
+		1398B73027C29CBF003DE536 /* DetailAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1398B72F27C29CBF003DE536 /* DetailAccountController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		13158C0527C0013900A0F747 /* MyBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13158C0927C0013900A0F747 /* MyBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBankUITests.swift; sourceTree = "<group>"; };
 		13158C0B27C0013900A0F747 /* MyBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		13158C1B27C0090700A0F747 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		13158C1D27C0091700A0F747 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		13158C2127C009AB00A0F747 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		136C9A8E27C12110004F1132 /* AccountTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewDataSource.swift; sourceTree = "<group>"; };
+		136C9A9127C12D48004F1132 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		1389470C27C3F5620078DF7A /* DetailAccountTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAccountTableViewDataSource.swift; sourceTree = "<group>"; };
+		1389470E27C3FA150078DF7A /* DetailAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAccountTableViewCell.swift; sourceTree = "<group>"; };
+		1389471127C405DB0078DF7A /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		1398B72F27C29CBF003DE536 /* DetailAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAccountController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +117,17 @@
 		13158BE727C0013700A0F747 /* MyBank */ = {
 			isa = PBXGroup;
 			children = (
-				13158BE827C0013700A0F747 /* AppDelegate.swift */,
-				13158BEA27C0013700A0F747 /* SceneDelegate.swift */,
-				13158BEC27C0013700A0F747 /* ViewController.swift */,
-				13158BEE27C0013700A0F747 /* Main.storyboard */,
+				1389471027C405CB0078DF7A /* Extensions */,
+				136C9A9027C12D33004F1132 /* TableViewCell */,
+				13158C1827C008D700A0F747 /* API Service */,
 				13158BF127C0013900A0F747 /* Assets.xcassets */,
-				13158BF327C0013900A0F747 /* LaunchScreen.storyboard */,
+				13158C1F27C0092700A0F747 /* Common */,
+				13158C1A27C008F000A0F747 /* Views */,
 				13158BF627C0013900A0F747 /* Info.plist */,
+				13158BF327C0013900A0F747 /* LaunchScreen.storyboard */,
+				13158BEE27C0013700A0F747 /* Main.storyboard */,
+				13158C1927C008E500A0F747 /* Models */,
+				13158C2027C0099800A0F747 /* ViewModels */,
 			);
 			path = MyBank;
 			sourceTree = "<group>";
@@ -125,6 +147,83 @@
 				13158C0B27C0013900A0F747 /* MyBankUITestsLaunchTests.swift */,
 			);
 			path = MyBankUITests;
+			sourceTree = "<group>";
+		};
+		13158C1827C008D700A0F747 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				13158C1B27C0090700A0F747 /* APIService.swift */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		13158C1927C008E500A0F747 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13158C1D27C0091700A0F747 /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13158C1A27C008F000A0F747 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13158BEC27C0013700A0F747 /* ViewController.swift */,
+				1398B72F27C29CBF003DE536 /* DetailAccountController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13158C1F27C0092700A0F747 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				13158BE827C0013700A0F747 /* AppDelegate.swift */,
+				13158BEA27C0013700A0F747 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		13158C2027C0099800A0F747 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1389470927C3F5330078DF7A /* DetailAccount */,
+				1389470827C3F5250078DF7A /* Account */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		136C9A9027C12D33004F1132 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				136C9A9127C12D48004F1132 /* AccountTableViewCell.swift */,
+				1389470E27C3FA150078DF7A /* DetailAccountTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		1389470827C3F5250078DF7A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				13158C2127C009AB00A0F747 /* AccountViewModel.swift */,
+				136C9A8E27C12110004F1132 /* AccountTableViewDataSource.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		1389470927C3F5330078DF7A /* DetailAccount */ = {
+			isa = PBXGroup;
+			children = (
+				1389470C27C3F5620078DF7A /* DetailAccountTableViewDataSource.swift */,
+			);
+			path = DetailAccount;
+			sourceTree = "<group>";
+		};
+		1389471027C405CB0078DF7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1389471127C405DB0078DF7A /* UILabel+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +357,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13158C1E27C0091700A0F747 /* Account.swift in Sources */,
+				136C9A8F27C12110004F1132 /* AccountTableViewDataSource.swift in Sources */,
+				1389470D27C3F5620078DF7A /* DetailAccountTableViewDataSource.swift in Sources */,
 				13158BED27C0013700A0F747 /* ViewController.swift in Sources */,
 				13158BE927C0013700A0F747 /* AppDelegate.swift in Sources */,
+				13158C1C27C0090700A0F747 /* APIService.swift in Sources */,
+				136C9A9227C12D48004F1132 /* AccountTableViewCell.swift in Sources */,
+				1389470F27C3FA150078DF7A /* DetailAccountTableViewCell.swift in Sources */,
+				1398B73027C29CBF003DE536 /* DetailAccountController.swift in Sources */,
+				13158C2227C009AB00A0F747 /* AccountViewModel.swift in Sources */,
+				1389471227C405DB0078DF7A /* UILabel+Extension.swift in Sources */,
 				13158BEB27C0013700A0F747 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
